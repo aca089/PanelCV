@@ -1016,14 +1016,12 @@ ul.about {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    margin: 0px 0px 0px 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0px -40px 0px 60px;
     border-width: 1px;
     border-style: solid;
     text-align: center;
     font-size: 24px;
-    /*float: left;*/
+    float: left;
     display: block;
     color : #fff;
     -webkit-transition: all .3s ease-in;

@@ -1017,12 +1017,13 @@ ul.about {
     height: 45px;
     line-height: 45px;
     margin: 0px 0px 0px 5px;
-    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     border-width: 1px;
     border-style: solid;
     text-align: center;
     font-size: 24px;
-    float: left;
+    /*float: left;*/
     display: block;
     color : #fff;
     -webkit-transition: all .3s ease-in;

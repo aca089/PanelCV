@@ -639,13 +639,15 @@ h2.resp-accordion:hover {
 .portfolio-wrapper {
     overflow:hidden;
     position: relative !important;
-    background: #666;
+    /*background: #666;*/
     cursor:pointer;
 }
 
 .portfolio img {
     max-width:100%;
     position: relative;
+    height:279.63px;
+    /*width:197.63px;*/
 }
 
 .portfolio .label {

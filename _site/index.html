@@ -250,7 +250,7 @@
             <!-- <i class="fa fa-quote-right"></i> -->
             <br><br>
             <!-- <i class="fa fa-quote-left"></i> -->
-            A have an academic background in Computer Science and Business Strategy. I'm passionate about developing products, gleaning scientific insights from data and developing business strategy around it.
+            A have an academic background in Computer Science and Business Strategy. I'm passionate about building products, gleaning scientific insights from data and developing business strategy around it.
             <!-- <i class="fa fa-quote-right"></i> -->
 
         </p>
@@ -594,8 +594,8 @@
         <!-- /.title_content -->
 
         <!-- .download_resume -->
-        <a class="download" style="margin:0;float: left;" href="#">
-            <span data-hover="Download My Resume"><i class="glyphicon glyphicon-download-alt"></i> Download</span>
+        <a class="download" style="margin:0;float: left;" id="not_available">
+            <span data-hover="Download"><i class="glyphicon glyphicon-download-alt"></i> Download</span>
         </a>
         <!-- /.download_resume -->
 
@@ -697,26 +697,6 @@
         <!-- #portfoliolist -->
         <div id="portfoliolist">
 
-            <!-- .portfolio -->
-            <div class="portfolio logo" data-cat="logo">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">
-                    <a href="images/portfolio/1.jpg" rel="portfolio" title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet">
-                        <img src="images/portfolio/1.jpg" alt="Visual Infography" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>
-            <!-- /.portfolio -->
-
-
 
             <!-- .portfolio -->
             <div class="portfolio catHardware" data-cat="catHardware">
@@ -771,12 +751,20 @@
             <div class="portfolio catData" data-cat="catData">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">
-                    <a href="images/portfolio/4.jpg" rel="portfolio">
-                        <img src="images/portfolio/4.jpg" alt="Typography Company" />
+                    <a href="images/portfolio/strace_parser.png"
+                    title="The project was part of an independent study I did with Professor Yan Chen to discover the differences
+                    of Linux system calls of Remote Access Trojans and harmless applications. The project entailed building a dataset
+                    from scratch, cleaning it and doing analysis after. &lt;br /&gt; &lt;br /&gt;
+                    Takeaways: There isn't a strong difference between system calls triggered by malignant and non-malignant applications in Linux. Thus,
+                    it wasn't possible to classify applications based on system calls itself. It was different for Windows applications, however, where we got
+                    almost 90% accuracy!&lt;br /&gt; &lt;br /&gt;
+                    Github Link: https://github.com/aca089/Linux-Strace-Parser- "
+                    rel="portfolio">
+                        <img src="images/portfolio/strace_parser.png" alt="Visual Infography" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Motion Graphic</span>
+                                <a class="text-title">Remote Access Trojans Linux</a>
+                                <span class="text-category">Cyber Security</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -812,24 +800,87 @@
             </div>
             <!-- /.portfolio -->
 
-            <!-- .portfolio -->
-            <div class="portfolio catData" data-cat="catData">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">
-                    <a href="images/portfolio/6.jpg" rel="portfolio">
-                        <img src="images/portfolio/6.jpg" alt="BMF" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Motion Graphic</span>
+
+                        <!-- .portfolio -->
+                        <div class="portfolio catData" data-cat="catData">
+                            <!-- .portfolio-wrapper -->
+                            <div class="portfolio-wrapper">
+                                <a href="images/portfolio/instacart.png"
+                                title="I analyzed Instacart's dataset that included information on the items people ordered, the time of order and various other
+                                variables. I used Pandas, Seaborn and matplotlib (Python libraries) for my analysis. It consists of two files - one
+                                is statistical inference/ hypothesis tests and the other is some exploratory data analysis. &lt;br /&gt; &lt;br /&gt;
+                                Takeaways: Effect size is the most important! No need to do hypothesis tests if the effect size is big and if the confidence intervals don't even overlap.
+                                Bootstrap and Permutation tests are useful as well. &lt;br /&gt; &lt;br /&gt;
+                                Github Link: https://github.com/aca089/Instacart-Data"
+                                rel="portfolio">
+                                    <img src="images/portfolio/instacart.png" alt="Visual Infography" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <a class="text-title">Instacart Dataset Analysis</a>
+                                            <span class="text-category">Data Exploration</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="label-bg"></div>
+                            <!-- /.portfolio-wrapper -->
                         </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>
-            <!-- /.portfolio -->
+                        <!-- /.portfolio -->
+
+
+                        <!-- .portfolio -->
+                        <div class="portfolio catData" data-cat="catData">
+                            <!-- .portfolio-wrapper -->
+                            <div class="portfolio-wrapper">
+                                <a href="images/portfolio/retention.png"
+                                title="I analyzed Harvard and MIT edX data to understand if I can build a model for student retention based on
+                                median age, hours for certification, length of videos, etc. The project was also a learning experience for me using Lasso and Ridge regression and
+                                understanding when it's appropriate to regularize. &lt;br /&gt; &lt;br /&gt;
+                                Takeaways: To improve retention, have mini-certifications in place since long hours for certification discouraged people from finishing the course (this of course is different for different age groups).
+                                Break the course into different sub-courses and have mini-certifications for each that an individual can directly share it on LinkedIn/Indeed etc. &lt;br /&gt; &lt;br /&gt;
+                                Github Link: https://github.com/aca089/Edtech-Data/blob/master/Retention_model.ipynb"
+                                rel="portfolio">
+                                    <img src="images/portfolio/retention.png" alt="Visual Infography" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <a class="text-title">edX Dataset Analysis</a>
+                                            <span class="text-category">Linear Regression</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- /.portfolio-wrapper -->
+                        </div>
+                        <!-- /.portfolio -->
+
+
+                        <!-- .portfolio -->
+                        <div class="portfolio catData" data-cat="catData">
+                            <!-- .portfolio-wrapper -->
+                            <div class="portfolio-wrapper">
+                                <a href="images/portfolio/small_projects.png"
+                                title="When I was enrolled in Sprinboard's Data Science Intensive bootcamp, I did various projects in data wrangling,
+                                machine learning and exploratory data analysis. The Github link below has links to all of the projects.&lt;br /&gt; &lt;br /&gt;
+                                Takeaways: Whenever you read about a new machine learning model or some new concept, it always helps to get a dataset online to
+                                check how the model performs and to understand the intricacies of implementing the model like overfitting, underfitting, etc. &lt;br /&gt; &lt;br /&gt;
+                                Github Link: https://github.com/aca089/Data-Science"
+                                rel="portfolio">
+                                    <img src="images/portfolio/small_projects.png" alt="Visual Infography" />
+                                    <div class="label">
+                                        <div class="label-text">
+                                            <a class="text-title">Various Small Projects</a>
+                                            <span class="text-category">Springboard Bootcamp</span>
+                                        </div>
+                                        <div class="label-bg"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- /.portfolio-wrapper -->
+                        </div>
+                        <!-- /.portfolio -->
+
+
 
             <!-- .portfolio -->
             <div class="portfolio catHardware" data-cat="catHardware">
@@ -837,7 +888,7 @@
                 <div class="portfolio-wrapper">
                     <a href="images/portfolio/alu.png"
                     title="Designed a 32-bit ALU in VHDL capable of doing addition, subtraction, division and multiplication. The ALU was built using gates only &lt;br /&gt; &lt;br /&gt;
-                    Takeaways: Always draw a hardware schematic before implementing it in software. Develop logic equations to minimize number of gates being used. &lt;br /&gt; &lt;br /&gt;
+                    Takeaways: Always draw a hardware schematic before implementing it in software. Develop logic equations to minimize number of gates being used and always make your code modular so that you can re-use components. &lt;br /&gt; &lt;br /&gt;
                     Github Link: https://github.com/aca089/ALU-in-VHDL"
                     rel="portfolio">
                         <img src="images/portfolio/alu.png" alt="Visual Infography" />
@@ -854,35 +905,24 @@
             </div>
             <!-- /.portfolio -->
 
-            <!-- .portfolio -->
-            <div class="portfolio logo" data-cat="logo">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">
-                    <a href="images/portfolio/8.jpg" rel="portfolio" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien.">
-                        <img src="images/portfolio/8.jpg" alt="KittyPic" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>
-            <!-- /.portfolio -->
 
             <!-- .portfolio -->
             <div class="portfolio catWeb" data-cat="catWeb">
                 <!-- .portfolio-wrapper -->
                 <div class="portfolio-wrapper">
-                    <a href="images/portfolio/9.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
-                        <img src="images/portfolio/9.jpg" alt="Graph Plotting" />
+                    <a href="images/portfolio/square1.png"
+                    title="Co-developed a Web Application for a client to manage operations for post-crowdfunding startups. Included several features
+                    to help with supply chain management such as inventory tracking, order backlogs, etc. Used jQuery, HTML, CSS, Firebase &lt;br /&gt; &lt;br /&gt;
+                    Takeaways: When working in an agile environment, prioritize user stories that add add the most value. For instance, things like login didn't
+                    add as much much value for our client as opposed to having a dashboard with findings.
+                    &lt;br /&gt; &lt;br /&gt;
+                    Github Link: https://github.com/aca089/EECS-394-Client-Project"
+                    rel="portfolio">
+                        <img src="images/portfolio/square1.png" alt="Visual Infography" />
                         <div class="label">
                             <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web Design</span>
+                                <a class="text-title">Operations Management Web App</a>
+                                <span class="text-category">Software</span>
                             </div>
                             <div class="label-bg"></div>
                         </div>
@@ -899,7 +939,7 @@
                     <a href="images/portfolio/nustars.png"
                     title="Represented Northwestern University in NASA's annual USLI competition and came 2nd place! &lt;br /&gt; &lt;br /&gt;
                     Takeaways: The actual performance of a rocket differs quite a lot from software simulation performance due
-                    to temperature, humidity and wind conditions. There is also a risk that a sensor might not function properly. Thus, always account for the unexpected variables in your simulation model."
+                    to temperature, humidity and wind conditions. There is also a risk that a sensor might not function properly when the rocket is launched. Thus, always account for the unexpected variables in your simulation model."
                     rel="portfolio">
                         <img src="images/portfolio/nustars.png" alt="Visual Infography" />
                         <div class="label">
@@ -916,43 +956,7 @@
             <!-- /.portfolio -->
 
 
-            <!-- .portfolio -->
-            <div class="portfolio logo" data-cat="logo">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">
-                    <a href="images/portfolio/11.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
-                        <img src="images/portfolio/11.jpg" alt="Mobi Sock" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>
-            <!-- /.portfolio -->
 
-            <!-- .portfolio -->
-            <div class="portfolio logo" data-cat="logo">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">
-                    <a href="images/portfolio/12.jpg" rel="portfolio">
-                        <img src="images/portfolio/12.jpg" alt="Village Community Church" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>
-            <!-- /.portfolio -->
 
             <div class="clear"></div>
 
@@ -967,18 +971,26 @@
 
 <!-- .blog -->
 <div id="blog" class="content_2">
-<h1 class="h-bloc">Blog / Featured Articles</h1><br> 
+<h1 class="h-bloc">Blog / Featured Articles</h1><br>
 
-<div class="col-md-12">
+
+  <div class="col-md-12">
     <div class="row">
+      <p><h3>Stay tuned for posts on business strategy, data science, my featured articles and other topics!!</h3></p>
+    </div>
+  </div>
+
+
+<!-- <div class="col-md-12">
+    <div class="row"> -->
 
         <!-- Page Blog -->
-        <div class="col-md-12" id="blog_page">
+        <!-- <div class="col-md-12" id="blog_page"> -->
             <!-- start Page Blog -->
-            <section id="blog-page">
+            <!-- <section id="blog-page"> -->
 
                 <!-- Post 1 -->
-                <article id="post-1" class="blog-article">
+                <!-- <article id="post-1" class="blog-article">
 
                     <div class="col-md-12">
 
@@ -1070,13 +1082,13 @@
                         </div>
 
                     </div>
-                </article>
+                </article> -->
                 <!-- End Post 1 -->
 
-                <div class="clear"></div>
+                <!-- <div class="clear"></div> -->
 
                 <!-- Post 2 -->
-                <article id="post-2" class="blog-article">
+                <!-- <article id="post-2" class="blog-article">
 
                     <div class="col-md-12">
 
@@ -1119,13 +1131,13 @@
                         </div>
 
                     </div>
-                </article>
+                </article> -->
                 <!-- End Post 2 -->
 
-                <div class="clear"></div>
+                <!-- <div class="clear"></div> -->
 
                 <!-- Post 3 -->
-                <article id="post-3" class="blog-article">
+                <!-- <article id="post-3" class="blog-article">
 
                     <div class="col-md-12">
 
@@ -1174,18 +1186,18 @@
                         </div>
 
                     </div>
-                </article>
+                </article> -->
 
                 <!-- End Post 3 -->
 
-            </section>
+            <!-- </section> -->
 
             <!-- End Page Blog -->
 
 
 
             <!-- Page Blog - Post 1 -->
-            <section id="post-1-page" class="content-post" style="display: none">
+            <!-- <section id="post-1-page" class="content-post" style="display: none">
                 <div class="row inner">
 
                     <div class="col-md-12" style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;float: left;background: rgba(255, 255, 255, 0.8);padding-bottom: 15px;padding-top: 15px;">
@@ -1334,9 +1346,10 @@
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="clear"></div>
-                                        </div><!-- .comments -->
+                                        </div> -->
+                                        <!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">John Smith <a class="reply" href="#">Reply</a></div>
@@ -1359,9 +1372,10 @@
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="clear"></div>
-                                        </div><!-- .comments -->
+                                        </div> -->
+                                        <!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">Andrian Robert <a class="reply" href="#">Reply</a></div>
@@ -1384,9 +1398,10 @@
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="clear"></div>
-                                        </div><!-- .comments -->
+                                        </div> -->
+                                        <!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">Andrian Robert <a class="reply" href="#">Reply</a></div>
@@ -1397,13 +1412,15 @@
                                                 amet cursus libero. In fringilla egestas ornare.
                                             </div>
                                             <div class="clear"></div>
-                                        </div><!-- .comments -->
+                                        </div> -->
+                                        <!-- .comments -->
 
 
 
-                                    </div><!-- .post_comments -->
+                                    <!-- </div> -->
+                                    <!-- .post_comments -->
 
-                                    <div class="clear"></div>
+                                    <!-- <div class="clear"></div>
 
 
                                     <div class="comment_form">
@@ -1427,18 +1444,18 @@
                                                 <label for="message">Your Message</label>
                                                 <textarea name="message" cols="88" rows="6" class="form-control" id="inputError" placeholder="Your Comment..."></textarea>
                                             </p>
-                                            <input type="reset" name="reset" value="CLEAR" class="reset">
+                                            <input type="reset" name="reset" value="CLEAR" class="reset"> -->
                                             <!--<input type="submit" name="submit" value="Post Comment" class="submit">-->
-                                            <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
+                                            <!-- <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
                                         </form>
                                         <div class="clear"></div>
 
                                     </div>
-                                </div>
+                                </div> -->
 
 
 
-                                <div class="col-md-12" style="margin-top: 20px;">
+                                <!-- <div class="col-md-12" style="margin-top: 20px;">
                                     <a href="#post-2" class="readmore" id="pagination"><i class="glyphicon glyphicon-chevron-right"></i></a>
                                     <a href="#" class="readmore disabled" id="pagination"><i class="glyphicon glyphicon-chevron-left"></i></a>
                                     <a href="#blog" class="readmore"><i class="glyphicon glyphicon-chevron-left"></i> All Posts</a>
@@ -1450,11 +1467,11 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-            </section>
+            </section> -->
             <!-- End Page Blog - Post 1 -->
 
             <!-- Page Blog - Post 2 -->
-            <section id="post-2-page" class="content-post" style="display: none">
+            <!-- <section id="post-2-page" class="content-post" style="display: none">
                 <div class="row inner">
 
                     <div class="col-md-12" style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;float: left;background: rgba(255, 255, 255, 0.8);padding-bottom: 15px;padding-top: 15px;">
@@ -1563,9 +1580,10 @@
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="clear"></div>
-                                        </div><!-- .comments -->
+                                        </div>
+                                        <!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">John Smith <a class="reply" href="#">Reply</a></div>
@@ -1590,7 +1608,7 @@
                                             <div class="clear"></div>
                                         </div><!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">Andrian Robert <a class="reply" href="#">Reply</a></div>
@@ -1615,7 +1633,7 @@
                                             <div class="clear"></div>
                                         </div><!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">Andrian Robert <a class="reply" href="#">Reply</a></div>
@@ -1630,9 +1648,10 @@
 
 
 
-                                    </div><!-- .post_comments -->
+                                    <!-- </div> -->
+                                    <!-- .post_comments -->
 
-                                    <div class="clear"></div>
+                                    <!-- <div class="clear"></div>
 
 
                                     <div class="comment_form">
@@ -1657,34 +1676,34 @@
                                                 <label for="message">Your Message</label>
                                                 <textarea name="message" cols="88" rows="6" class="form-control" id="inputError" placeholder="Your Comment..."></textarea>
                                             </p>
-                                            <input type="reset" name="reset" value="CLEAR" class="reset">
+                                            <input type="reset" name="reset" value="CLEAR" class="reset"> -->
                                             <!--<input type="submit" name="submit" value="Post Comment" class="submit">-->
-                                            <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
+                                            <!-- <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
                                         </form>
                                         <div class="clear"></div>
 
                                     </div>
-                                </div>
+                                </div> -->
 
 
 
-                                <div class="col-md-12"  style="margin-top: 20px;">
+                                <!-- <div class="col-md-12"  style="margin-top: 20px;">
                                     <a href="#post-3" class="readmore" id="pagination"><i class="glyphicon glyphicon-chevron-right"></i></a>
                                     <a href="#post-1" class="readmore" id="pagination"><i class="glyphicon glyphicon-chevron-left"></i></a>
                                     <a href="#blog" class="readmore"><i class="glyphicon glyphicon-chevron-left"></i> All Posts</a>
                                 </div>
 
-                                <div class="clear"></div>
-
+                                <div class="clear"></div> -->
+<!--
                         </article>
                     </div>
                     <div class="clear"></div>
                 </div>
-            </section>
+            </section> -->
             <!-- End Page Blog - Post 2 -->
 
             <!-- Page Blog - Post 3 -->
-            <section id="post-3-page" class="content-post" style="display: none">
+            <!-- <section id="post-3-page" class="content-post" style="display: none">
                 <div class="row inner">
 
                     <div class="col-md-12" style="width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;float: left;background: rgba(255, 255, 255, 0.8);padding-bottom: 15px;padding-top: 15px;">
@@ -1802,7 +1821,7 @@
                                             <div class="clear"></div>
                                         </div><!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">John Smith <a class="reply" href="#">Reply</a></div>
@@ -1827,7 +1846,7 @@
                                             <div class="clear"></div>
                                         </div><!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">Andrian Robert <a class="reply" href="#">Reply</a></div>
@@ -1850,9 +1869,10 @@
                                                 <div class="clear"></div>
                                             </div>
                                             <div class="clear"></div>
-                                        </div><!-- .comments -->
+                                        </div>
+                                        <!-- .comments -->
 
-                                        <div class="comment">
+                                        <!-- <div class="comment">
                                             <img src="http://placehold.it/100x100" width="100" height="100" alt="img" />
                                             <div class="text">
                                                 <div class="name">Andrian Robert <a class="reply" href="#">Reply</a></div>
@@ -1867,9 +1887,10 @@
 
 
 
-                                    </div><!-- .post_comments -->
+                                    <!-- </div> -->
+                                    <!-- .post_comments -->
 
-                                    <div class="clear"></div>
+                                    <!-- <div class="clear"></div>
 
 
                                     <div class="comment_form">
@@ -1894,9 +1915,9 @@
                                                 <label for="message">Your Message</label>
                                                 <textarea name="message" cols="88" rows="6" class="form-control" id="inputError" placeholder="Your Comment..."></textarea>
                                             </p>
-                                            <input type="reset" name="reset" value="CLEAR" class="reset">
+                                            <input type="reset" name="reset" value="CLEAR" class="reset"> -->
                                             <!--<input type="submit" name="submit" value="Post Comment" class="submit">-->
-                                            <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
+                                            <!-- <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
                                         </form>
                                         <div class="clear"></div>
 
@@ -1916,11 +1937,11 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-            </section>
+            </section> -->
             <!-- End Page Blog - Post 3 -->
 
 
-        </div>
+        <!-- </div>
 
 
         <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
@@ -1942,7 +1963,7 @@
         </div>
 
     </div>
-</div>
+</div> -->
                                             </div>
                                             <!-- End .blog -->
 

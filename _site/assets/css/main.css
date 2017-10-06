@@ -968,7 +968,7 @@ ul.about {
     -webkit-border-radius: 99em;
     -moz-border-radius: 99em;
     border-radius: 99em;
-    background-image: url('../images/img/front.jpg');
+    /*background-image: url('../images/img/front.jpg');*/
     margin-top: 25px;
     margin-bottom: 7px;
 }

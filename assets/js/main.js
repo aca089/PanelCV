@@ -445,8 +445,8 @@ jQuery(document).ready(function($) {
         });
     });
 
-    $("#hello").click(function(){
-      alert("The paragraph was clicked.");
+    $("#not_available").click(function(){
+      alert("Hi there, the actual resume will be updated soon! Not available right now :) ");
     });
 
 

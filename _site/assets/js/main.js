@@ -290,25 +290,25 @@ jQuery(document).ready(function($) {
     /* ------------------------------ Google Maps --------------------------- */
     /* ---------------------------------------------------------------------- */
 
-    var map;
-    function initialize() {
-        map = new GMaps({
-            div: '#map',
-            lat: -37.817917,
-            lng: 144.965065,
-            zoom: 16
-
-        });
-        map.addMarker({
-            lat: -37.81792,
-            lng: 144.96506,
-            title: 'Marker with InfoWindow',
-            icon: 'images/pins-map/map-marker.png',
-            infoWindow: {
-                content: '<p>Melbourne Victoria, 300, Australia</p>'
-            }
-        });
-    }
+    // var map;
+    // function initialize() {
+    //     map = new GMaps({
+    //         div: '#map',
+    //         lat: -37.817917,
+    //         lng: 144.965065,
+    //         zoom: 16
+    //
+    //     });
+    //     map.addMarker({
+    //         lat: -37.81792,
+    //         lng: 144.96506,
+    //         title: 'Marker with InfoWindow',
+    //         icon: 'images/pins-map/map-marker.png',
+    //         infoWindow: {
+    //             content: '<p>Melbourne Victoria, 300, Australia</p>'
+    //         }
+    //     });
+    // }
 
     /* ---------------------------------------------------------------------- */
     /* --------------------------------- Blog ------------------------------- */
@@ -447,6 +447,26 @@ jQuery(document).ready(function($) {
 
     $("#not_available").click(function(){
       alert("Hi there, the actual resume will be updated soon! Not available right now :) ");
+    });
+
+    $('button[name="submit"]').click(function(){
+      var data = {
+        name: $("#form_name").val(),
+        email: $("#form_email").val(),
+        message: $("#form_msg").val()
+      };
+      $.ajax({
+        type: "POST",
+        url: "php/email.php",
+        data: data,
+          success: function(){
+          $('.success').fadeIn(1000);
+        }
+      });
+      $("#form_name").val("");
+      $("#form_email").val("");
+      $("#form_msg").val("");
+      alert("Thanks for your message! It has been sent")
     });
 
 
